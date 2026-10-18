@@ -2,9 +2,9 @@
 
 Buscador rápido de **puntos kilométricos (PK)** de las carreteras de la provincia de Guadalajara.
 
-- **Web / iPhone:** https://alessandrocil8-wq.github.io/km-guadalajara/
+- **Web / iPhone:** https://cilantro-corporation.github.io/km-guadalajara/
   (en Safari: *Compartir → Añadir a pantalla de inicio* para tenerla como app).
-- **Android:** APK en [Releases](https://github.com/alessandrocil8-wq/km-guadalajara/releases/latest).
+- **Android:** APK en [Releases](https://github.com/Cilantro-Corporation/km-guadalajara/releases/latest).
 
 ## Qué hace
 
