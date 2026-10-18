@@ -1,0 +1,13 @@
+{
+  "appId": "es.kmguadalajara.app",
+  "appName": "km. Guadalajara",
+  "webDir": "build/www-android",
+  "android": {
+    "allowMixedContent": false,
+    "captureInput": false,
+    "webContentsDebuggingEnabled": false
+  },
+  "server": {
+    "androidScheme": "https"
+  }
+}

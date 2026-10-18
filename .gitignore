@@ -1,0 +1,13 @@
+node_modules/
+build/
+raw/
+firma-android/
+*.jks
+*.keystore
+keystore.properties
+android/app/release/
+*.apk
+*.aab
+.DS_Store
+Thumbs.db
+.claude/
