@@ -4,7 +4,8 @@ import { readFile, stat } from 'node:fs/promises';
 import { extname, join, normalize, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const ROOT = resolve(fileURLToPath(new URL('../www/', import.meta.url)));
+// node tools/serve.mjs [puerto] [carpeta]   (por defecto www/; p. ej. build/www-android para probar lo que va en el APK)
+const ROOT = resolve(fileURLToPath(new URL(`../${process.argv[3] || 'www'}/`, import.meta.url)));
 const PORT = +(process.argv[2] || process.env.PORT || 8080);
 const TYPES = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8',

@@ -18,6 +18,7 @@ let html = await readFile(indexUrl, 'utf8');
 const before = html;
 html = html.replace("script-src 'self';", "script-src 'self' 'unsafe-inline';");
 html = html.replace(/\s*<link rel="manifest"[^>]*>/, '');
+html = html.replace(/\s*<a class="btn apk-link"[^>]*>[^<]*<\/a>/, '');
 if (html === before) throw new Error('No se pudo adaptar index.html para Android');
 await writeFile(indexUrl, html);
 console.log('build/www-android listo');

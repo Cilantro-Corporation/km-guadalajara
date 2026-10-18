@@ -662,7 +662,7 @@
   fromHash();
 
   $('dataDate').textContent = 'Datos generados el ' + C.generated + '.';
-  $('apkLink').hidden = IS_NATIVE || IS_IOS;
+  if ($('apkLink')) $('apkLink').hidden = IS_NATIVE || IS_IOS;
 
   // ---------- PWA ----------
   // (En la app Android los archivos ya van dentro del APK: no hace falta service worker)
